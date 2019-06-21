@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta name="view-port" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <style type="text/css">
+
+	  	*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 18px;
+	overflow-x: hidden;
+	color: #fff;
+	font-family: 'Flamenco', cursive;
+}
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/head.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+
+}
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.row h2{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.main-nav {
+	float: right;
+	margin-top: 60px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+
+}
+.main-nav li a {
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+
+}
+
+.main-nav li a:hover {
+	border-bottom: 2px solid #bf55ec;
+}
+.main-content {
+	width: 1180px;
+	position: absolute;
+	top : 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	color: #fff;
+	font-size: 200%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.main-content h2{
+	color: #fff;
+	font-size: 160%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2x, border 0.2s, color 0.2s;
+}
+.btn-full {
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+	background-color: #fff;
+}
+.btn-nav {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+
+.btn-nav:hover{
+	background-color: #bf55ec;
+	}
+
+.colorchange {
+	animation: colorchangesuraj 1s infinite;
+}
+
+@keyframes colorchangesuraj{
+	0%{color: #fff;}
+	25%{color: #bf55ec;}
+	50%{color:blue;}
+	100%{color: red;}
+}
+.mobile-icon {
+	display: none;
+}
+
+/*////////responsive quiries//////*/
+@media only screen and (max-width: 1180px) {
+	.main-content{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+
+@media only screen and (max-width: 998px) {
+h1{
+		font-size: 180%;
+
+	}
+
+.main-content h2{
+	font-size: 180%;
+
+}
+
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 160%;
+
+	}
+	.main-content h2{
+	font-size: 160%;
+	}
+	.main-nav{
+		display: none;
+	}
+	.mobile-icon{
+		display: inline-block;
+		 color: #fff;
+		 float: right;
+		 margin-top: 45px;
+		 margin-right: 20px;
+
+	}
+	.main-nav{
+		float: left;
+	}
+	.main-nav li{
+		display: block;
+		margin-top: 9px;
+		 font-size: 65%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-full{
+		margin-bottom: 20px;
+	}
+	h1{
+		font-size: 140%;
+	}
+	.main-content h2{
+	font-size: 140%;
+	
+}
+
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<h2>SurajWebGuru</h2>
+				<ul class="main-nav animated fadeInUp" id="check-class">
+					<li><a href="sub/home/home.html">Home</a></li>
+					<li><a href="sub/about.html">About</a></li>
+					<li><a href="sub/imagegallery.html">album</a></li>
+					<li><a href="sub/home/more.html">More</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+				
+			</div>
+		</nav>
+		<div class="main-content">
+		<h1>Welcome To My Dark World, Hope you'll like it.</h1>
+<h2>Hope can be a powerful force. Maybe there's no actual magic in it, but when you know what you hope for most and hold it
+ like a light within you, you can make things happen, almost like magic.  <span class="colorchange">Stay with ME</span>.</h2>
+		<a href="sub/signup.html" class="btn btn-full">Sign Up</a>
+		<a href="sub/login.html" class="btn btn-nav">Log In</a>
+	</div>
+	</header>
+
+
+	<script type="text/javascript">
+		function slideshow(){
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none"){
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>

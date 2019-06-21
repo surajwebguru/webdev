@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Galley</title>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<meta name="view-port" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	
+	  	*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: #fff;
+	font-family: 'Flamenco', cursive;
+}
+
+header {
+	background-color: black;
+	background-size: cover;
+	text-align: center;
+
+}
+
+h1 {
+  text-align: center;
+  color: forestgreen;
+  margin: 20px 0 20px;
+
+}
+.gallery img{
+  width: 230px;
+  height: 200px;
+  padding: 5px; 
+  filter: grayscale(50%);
+  transition: 1s;
+
+}
+.gallery img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+
+}
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.row h2{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.main-nav {
+	float: right;
+	margin-top: 60px;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+
+}
+.main-nav li a {
+	padding: 5px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+
+}
+
+.main-nav li a:hover {
+	border-bottom: 2px solid #bf55ec;
+}
+.mobile-icon {
+	display: none;
+}
+
+/*////////responsive quiries//////*/
+@media only screen and (max-width: 1180px) {
+	.main-content{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+
+@media only screen and (max-width: 998px) {
+	h1{
+		font-size: 200%;
+	}
+
+
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 180%;
+
+	}
+	.main-nav{
+		display: none;
+	}
+	.mobile-icon{
+		display: inline-block;
+		 color: #fff;
+		 float: right;
+		 margin-top: 30px;
+		 margin-right: 20px;
+	}
+	.main-nav{
+		float: left;
+	}
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-full{
+		margin-bottom: 20px;
+	}
+	h1{
+		font-size: 160%;
+	}
+}
+</style>
+</head>
+<body>
+	<header>
+	<nav>
+			<div class="row clearfix">
+				<h2>Surajwebdev</h2>
+				<ul class="main-nav animated fadeInUp" id="check-class">
+					<li><a href="../index.html">Welcome</a></li>
+					<li><a href="home/home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="home/more.html">More</a></li>
+				</ul>
+				<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+				
+			</div>
+		</nav>
+	<h1>Image Gallery</h1>
+	<div class="gallery">
+		<a href="images/images/1.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/1.jpg"></a>
+		<a href="images/images/2.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/2.jpg"></a>
+		<a href="images/images/3.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/3.jpg"></a>
+		<a href="images/images/4.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/4.jpg"></a>
+		<a href="images/images/5.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/5.jpg"></a>
+		<a href="images/images/6.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/6.jpg"></a>
+		<a href="images/images/7.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/7.jpg"></a>
+		<a href="images/images/8.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/8.jpg"></a>
+		<a href="images/images/9.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/9.jpg"></a>
+		<a href="images/images/10.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/10.jpg"></a>
+		<a href="images/images/11.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/11.jpg"></a>
+		<a href="images/images/12.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/12.jpg"></a>
+		<a href="images/images/13.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/13.jpg"></a>
+		<a href="images/images/14.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/14.jpg"></a>
+		<a href="images/images/15.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/15.jpg"></a>
+		<a href="images/images/16.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/16.jpg"></a>
+		<a href="images/images/17.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/17.jpg"></a>
+		<a href="images/images/18.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/18.jpg"></a>
+		<a href="images/images/19.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/19.jpg"></a>
+		<a href="images/images/20.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/20.jpg"></a>
+		<a href="images/images/21.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/21.jpg"></a>
+		<a href="images/images/22.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/22.jpg"></a>
+		<a href="images/images/23.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/23.jpg"></a>
+		<a href="images/images/24.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/24.jpg"></a>
+		<a href="images/images/25.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/25.jpg"></a>
+		<a href="images/images/26.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/26.jpg"></a>
+		<a href="images/images/27.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/27.jpg"></a>
+		<a href="images/images/28.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/28.jpg"></a>
+		<a href="images/images/29.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/29.jpg"></a>
+		<a href="images/images/30.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/30.jpg"></a>
+		<a href="images/images/31.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/31.jpg"></a>
+		<a href="images/images/32.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/32.jpg"></a>
+		<a href="images/images/33.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/33.jpg"></a>
+		<a href="images/images/34.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/34.jpg"></a>
+		<a href="images/images/35.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/35.jpg"></a>
+		<a href="images/images/36.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/36.jpg"></a>
+		<a href="images/images/37.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/37.jpg"></a>
+		<a href="images/images/38.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/38.jpg"></a>
+		<a href="images/images/39.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/39.jpg"></a>
+		<a href="images/images/40.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/40.jpg"></a>
+		<a href="images/images/41.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/41.jpg"></a>
+		<a href="images/images/42.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/42.jpg"></a>
+		<a href="images/images/43.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/43.jpg"></a>
+		<a href="images/images/44.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/44.jpg"></a>
+		<a href="images/images/45.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/45.jpg"></a>
+		<a href="images/images/46.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/46.jpg"></a>
+		<a href="images/images/47.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/47.jpg"></a>
+		<a href="images/images/48.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/48.jpg"></a>
+		<a href="images/images/49.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/49.jpg"></a>
+		<a href="images/images/50.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/50.jpg"></a>
+		<a href="images/images/51.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/51.jpg"></a>
+		<a href="images/images/52.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/52.jpg"></a>
+		<a href="images/images/53.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/53.jpg"></a>
+		<a href="images/images/54.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/54.jpg"></a>
+		<a href="images/images/55.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/55.jpg"></a>
+		<a href="images/images/56.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/56.jpg"></a>
+		<a href="images/images/57.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/57.jpg"></a>
+		<a href="images/images/58.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/58.jpg"></a>
+		<a href="images/images/59.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/59.jpg"></a>
+		<a href="images/images/60.jpg" data-lightbox="mygallery" data-title="anything"><img src="images/60.jpg"></a>
+	</div>
+</header>
+<script type="text/javascript">
+		function slideshow(){
+			var x = document.getElementById('check-class');
+			if (x.style.display === "none"){
+				x.style.display="block";
+			}
+			else{
+				x.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>
